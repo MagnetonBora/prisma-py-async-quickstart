@@ -6,6 +6,8 @@ async def main() -> None:
     db = Client()
     await db.connect()
 
+    # write any prisma client python queries here
+
     post = await db.post.create(
         {
             'title': 'Hello from prisma!',

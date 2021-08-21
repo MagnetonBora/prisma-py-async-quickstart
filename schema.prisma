@@ -29,10 +29,12 @@ generator client {
   // partial_type_generator = ""
 }
 
-// example model
-// see https://www.prisma.io/docs/concepts/components/prisma-schema
-// for how to define models
-model User {
-  id   String @id @default(cuid())
-  name String
+
+model Post {
+  id         String   @default(cuid()) @id
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  title      String
+  published  Boolean
+  desc       String?
 }

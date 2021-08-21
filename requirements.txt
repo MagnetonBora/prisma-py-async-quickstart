@@ -1,1 +1,2 @@
 prisma-client[aiohttp]
+pyright

@@ -7,7 +7,7 @@ This repository showcases the minimum steps required to get started using [Prism
 
 ## Usage
 
-For a more detailed explanation see the Prisma Client Python [documentation](https://github.com/RobertCraigie/prisma-client-py/blob/main/docs/quickstart.md).
+For a more detailed explanation see the Prisma Client Python [documentation](https://prisma-client-py.readthedocs.io/quickstart/).
 
 ```sh
 python3 -m venv .venv

@@ -1,7 +1,5 @@
-# TODO: install from requirements.txt
-
 tasks:
   - name: Dependencies & Database
     init: |
-      pip install -U pyright git+https://github.com/RobertCraigie/prisma-client-py#egg=prisma-client[aiohttp]
+      pip install -U -r requirements.txt
       prisma db push

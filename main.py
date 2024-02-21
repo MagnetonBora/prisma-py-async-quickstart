@@ -15,11 +15,11 @@ async def main() -> None:
             'published': True,
         }
     )
-    print(f'created post: {post.json(indent=2, sort_keys=True)}')
+    print(f'created post: {post.model_dump_json(indent=2)}')
 
     found = await db.post.find_unique(where={'id': post.id})
     assert found is not None
-    print(f'found post: {found.json(indent=2, sort_keys=True)}')
+    print(f'found post: {found.model_dump_json(indent=2)}')
 
     await db.disconnect()
 
